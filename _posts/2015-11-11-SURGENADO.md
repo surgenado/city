@@ -1,9 +1,9 @@
 ---
-layout: surge1
+layout: surge
 title: SURGENADO
 date: 2015-11-11
 checkin: 2015-11-18
-categories: 
+categories:
 cal-title: "#SURGENADO"
 timezone: "America/Los_Angeles"
 timeslots:

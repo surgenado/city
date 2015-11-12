@@ -1,5 +1,5 @@
 ---
-layout: surge1
+layout: surge
 title: SURGENADO
 date: 2015-11-10
 checkin: 2015-11-17

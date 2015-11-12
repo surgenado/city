@@ -10,7 +10,14 @@
 
 <body>
 <h1 class="page-heading">{{ page.checkin | date: "%B %-d, %Y" }}</h1>
-
+<h2>Instructions</h2>
+        <p class="lead">1. Pick a time in the middle of when you normally drive.
+        <p class="lead">2. When the Surgenado goes live, this will be your time to log off.</p>
+        <p class="lead">3. Click the button to add it to your calendar</p>
+        <p class="lead">4. When the reminder pops up, follow the link to Check In.</p>
+        <p class="lead">5. When a minimum viable number of drivers Check In, The Surgenado is Live!!</p>
+        <p class="lead">6. Drivers syncronize logouts</p>
+        <p class="lead">7. Working Less for a similer amount of money. </p>
 <ul>{% for timeslot in page.timeslots %}
   <h2>{{ timeslot.time-start }} to {{ timeslot.time-end }}</h2>
   <l1><span class="addtocalendar atc-style-blue">
