@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>YOU ROCK!!!</h1>
+  <h1 class="page-heading">We're so glad you chose to join!</h1>
+  <h1 class="page-heading">Participation is easy:</h1>
+  <h1 class="page-heading">Just click on a Surgenado...</h1>
+  <h1 class="page-heading">and follow instructions!</h1>
+  <
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.checkin | date: "%B %-d"}} {{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
