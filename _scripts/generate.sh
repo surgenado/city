@@ -15,6 +15,6 @@ FILE=$then"-surgenado.md"
   cp  -f $TEMPLATE $FILE
   sed -i 's/YYYY-MM-DD/'$then'/g' $FILE
   sed -i 's/YYYY-MM-PP/'$now'/g' $FILE
-  mv $FILE ../_posts/$FILE
+  mv $FILE ../_drafts/$FILE
   now=`$DATE +$FORMAT -d "$now + 1 day"`
 done
