@@ -1,8 +1,8 @@
 ---
 layout: surge
 title: SURGENADO
-date: 2015-11-05
-checkin: 2015-11-12
+date: 2015-12-30
+checkin: 2016-01-06
 categories:
 cal-title: "#SURGENADO"
 timezone: "America/Los_Angeles"
