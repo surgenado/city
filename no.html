@@ -3,17 +3,14 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Not A Problem. We're still building support and we're glad you're here!</h1>
-  <h1 class="page-heading">That said, we could sure use your help beating the record "yes page counter" people who participtated today</h1>
-  <h1 class="page-heading">For some more info on what we're doing, checkout the <a href="{{ site.url }}/blog/">Surgenado Blog</a></h1>
-  <h1 class="page-heading">Then sign up for another!</h1>
-
+  <h1>Not A Problem. (yet)</h1>
+  <h1 class="page-heading">We're still building support and we're glad you're here!</h1>
+  <h1 class="page-heading">Checkout the <a href="{{ site.url }}/blog/">Blog</a> for some motiviation.</h1>
+  <h1 class="page-heading">Choose a time that works better for you!</h1>
+<hr />
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.checkin | date: "%B %-d"}} {{ post.title }}</a>
         </h2>
