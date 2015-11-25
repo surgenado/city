@@ -1,0 +1,41 @@
+<!-- surge.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>{{ page.title }}</title>
+  <!-- Style for Add to Calendar-->
+  <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  {% include buttons-left.html %}
+
+  <h1 class="page-heading">{{ page.checkin | date: "%B %-d, %Y" }}</h1>
+  <h2>Instructions</h2>
+          <p class="lead">1. Pick a time in the middle of when you normally drive.
+          <p class="lead">2. When the Surgenado goes live, this will be your time to log off.</p>
+          <p class="lead">3. Click the button to add it to your calendar</p>
+          <p class="lead">4. When the reminder pops up, follow the link to Check In.</p>
+          <p class="lead">5. When a minimum viable number of drivers Check In, The Surgenado is Live!!</p>
+          <p class="lead">6. Drivers syncronize logouts</p>
+          <p class="lead">7. Working Less for a similer amount of money.</p>
+
+  <ul>{% for timeslot in page.timeslots %}
+    <h2>{{ timeslot.time-start }} to {{ timeslot.time-end }}</h2>
+    <l1><span class="addtocalendar atc-style-blue">
+        <var class="atc_event">
+            <var class="atc_date_start">{{ page.checkin | date: "%Y-%m-%d" }} {{ timeslot.time-start }}</var>
+            <var class="atc_date_end">{{ page.checkin | date: "%Y-%m-%d" }} {{ timeslot.time-end }}</var>
+            <var class="atc_timezone">{{ page.timezone }}</var>
+            <var class="atc_title">{{ page.cal-title }}</var>
+            <var class="atc_description">GoTo: {{ site.url }}{{ site.baseurl }}</var>
+            <var class="atc_location">{{ site.title }}</var>
+            <var class="atc_organizer">Surgenado</var>
+            <var class="atc_organizer_email">{{site.email}}</var>
+        </var>
+    </span></li>
+  {% endfor %}</ul>
+
+  {% include add-to-cal.html %}
+</body>

@@ -8,7 +8,8 @@
 # Site settings
 title: City
 email: city@surgenado.com
-description: City Surgenado
+description: > # this means to ignore newlines until "baseurl:"
+  City Surgenado
 baseurl: "/city" # the subpath of your site, e.g. /blog
 url: "http://www.surgenado.com" # the base hostname & protocol for your site
 twitter_username: surgenado

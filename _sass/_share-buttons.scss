@@ -1,0 +1,36 @@
+/**
+ * Styling for share buttons
+ */
+ //share button variables
+ $secondary-color: #505050;
+ $light-color:     #D8D8D8;
+
+.share-buttons {
+    text-align: center;
+    background: $secondary-color;
+    }
+
+.buttons-center {
+    text-align: center;
+    background: $background-color;
+    }
+
+.buttons-left {
+    text-align: left;
+    background: $background-color;
+    }
+
+h1.share-buttons{
+  color: $light-color;
+}
+ul.share-buttons{
+  overflow: hidden;
+  display: inline-block;
+  list-style: none;
+  padding: 10;
+  a {
+      &:hover {
+          border-bottom: 1px dashed #fff;
+      }
+    }
+}
