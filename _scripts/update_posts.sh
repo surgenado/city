@@ -1,6 +1,5 @@
 #!/bin/bash
 
-TEMPLATE=YYYY-MM-DD-surgenado.md
 DATE=date
 FORMAT="%Y-%m-%d"
 today=`$DATE +$FORMAT`
