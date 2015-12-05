@@ -2,7 +2,7 @@
  * Styling for share buttons
  */
  //share button variables
- $secondary-color: #505050;
+ $secondary-color: transparant;
  $light-color:     #D8D8D8;
 
 .share-buttons {
@@ -12,12 +12,12 @@
 
 .buttons-center {
     text-align: center;
-    background: $background-color;
+    background: $secondary-color;
     }
 
 .buttons-left {
     text-align: left;
-    background: $background-color;
+    background: $secondary-color;
     }
 
 h1.share-buttons{
